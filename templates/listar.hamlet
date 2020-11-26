@@ -1,0 +1,33 @@
+<h1 class="mt-4 text-center">
+    Meus produtos
+<table class="table table-striped mt-4">
+    <thead>
+        <tr>
+            <th>
+                Nome
+            <th>
+                Valor
+            <th>
+            <th>
+            <th>
+    <tbody>
+        $forall Entity pid produto <- produtos
+            <tr>
+                <td>
+                    <a href=@{DescR pid}>
+                       #{produtoNome produto}
+                <td>
+                    #{produtoValor produto}
+                <td>
+                    <a href=@{UpdProdR pid} class="btn btn-secondary">
+                            <i class="fas fa-pen">
+                            Editar
+                <td>
+                    <form action=@{DelProdR pid} method=post>
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fas fa-trash-alt">
+                            Deletar
+                 <td>
+                    <a href=@{DescR pid} class="btn btn-secondary">
+                            <i class="fas fa-shopping-cart">
+                            Adicionar no carrinho

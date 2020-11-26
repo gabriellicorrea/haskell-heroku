@@ -1,0 +1,20 @@
+<div class="card mt-5">
+  <div class="card-header">
+    Produto
+  <div class="card-body">
+    <h5 class="card-title">
+        Produto: #{produtoNome produto}
+    <p class="card-text">
+        Preço: R$ #{produtoValor produto}
+     <form action=@{ComprarR pid} method="post" class="mt-4">
+        ^{widget}
+        <button type="submit" class="btn btn-success">
+            <i class="fas fa-shopping-cart">
+            Adicionar nas compras
+    <a href=@{ListComprarR} class="btn btn-primary">
+        Ir para minhas compras
+
+
+
+
+     
